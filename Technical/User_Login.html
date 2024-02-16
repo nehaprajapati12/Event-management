@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+   
+    
+   
+    .center-div {
+        width:90% ;
+        padding: 10px;
+        background-color: #007bff;
+        text-align: center;
+        margin-top: 4%;
+    }
+    .form-container {
+        margin-top: 20px;
+        width: 30%;
+    }
+    .form-group {
+        margin-bottom: 15px;
+        gap: 3%;
+    }
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        
+    }
+    .signup-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 10%;
+        gap: 28%;
+    }
+    .signup-buttons button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        cursor: pointer;
+    }
+    .form-group{
+        display:flex ;
+    }
+
+    .form-group label {
+        width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="center-div">
+        <div>Event Managment System</div>
+    </div>
+    <div class="form-container">
+        <form>
+            <div class="form-group" >
+                <label for="">User ID </label>
+                <input type="text" placeholder="Username" name="username">
+            </div>
+            
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+        </form>
+    </div>
+    <div class="signup-buttons">
+        <button>Cancel </button>
+        <button> Login </button>
+       
+    </div>
+</div>
+
+</body>
+</html>

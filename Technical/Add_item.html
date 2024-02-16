@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-div {
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        background-color: blue;
+    }
+    .welcome {
+        flex: 1;
+        background-color: blue;
+    }
+    .buttons {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      
+    }
+    .button {
+        margin-left: 10px;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 2%;
+    }
+    .bottom-divs {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 20px;
+        border-radius: 2%;
+    }
+    .sub-div {
+        width: 48%;
+        background-color: lightgray;
+        padding: 10px;
+        text-align: center;
+    }
+    .sub-sub-div {
+        margin-top: 10px;
+        background-color: lightgray;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-div">
+        <div class="welcome">
+            Welcome   'Vendor Name'					
+
+        </div>
+        <div class="buttons">
+            <button class="button"> product Status</button>
+            <button class="button"> Request Item</button>
+            <button class="button"> View Product</button>
+            <button class="button"> Log Out</button>
+        </div>
+    </div>
+    <div class="bottom-divs">
+        <div class="sub-div">
+            <div class="button">Product Namme</div>
+            <div class="button">  Product price</div>
+            <div class="button">  Product Image</div>
+            <div class="button"> Add Product </div>
+        </div>
+        <div class="sub-div">
+            <div class="sub-sub-div">
+                <button class="button">   Product Image
+                </button>
+                <button class="button">   Product Name
+                </button>
+                <button class="button">   Product Price
+                </button>
+                <button class="button">   Action
+                </button>
+            </div>
+            <div class="sub-sub-div">
+                <button class="button">   Image</button>
+                <button class="button">   Image Name
+                </button>
+                <button class="button">   Rs/-
+                </button>
+                <button class="button">   Delete
+                </button>
+                <button class="button">   Update
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

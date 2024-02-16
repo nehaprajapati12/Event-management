@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #e6f2e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            width: 75%;
+            margin-left: 58px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            width: 60%;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .btn {
+    text-align: center;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #0056b3;
+}
+
+        @media (max-width: 768px) {
+            .form-group {
+                flex-direction: column;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            select {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .login-form {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Event Managment System</h2>
+        <form id="signup-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="Option 1">Florist</option>
+                    <option value="Option 2">Decoretion</option>
+                    <option value="Option 3">Lighting</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn" id="signup-button">Sign Up</button>
+            </div>
+        </form>
+        
+        <form id="login-form" class="login-form" action="#" method="post">
+            <h2>Login Form</h2>
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+</div>
+
+<script>
+        document.getElementById('signup-button').addEventListener('click', function () {
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        window.open('admin.html', '_blank');
+    });
+    </script>
+
+
+   
+
+</body>
+
+</html>

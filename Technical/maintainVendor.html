@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User & Vendor Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+   
+
+    <nav>
+        <ul>
+            <li><a href="#" id="homeBtn">Home</a></li>
+            <li><a href="#" id="membershipBtn">Membership</a></li>
+            <li><a href="#" id="userManagementBtn">User Management</a></li>
+        </ul><br><br><br>
+
+
+        <div class="button-container">
+            <button class="btn" id="addBtn">Add</button><br><br>
+            <button class="btn" id="updateBtn">Update</button><br><br>
+            <button class="btn" id="addBtn">Add</button><br><br>
+            <button class="btn" id="updateBtn">Update</button><br><br>
+            <button class="btn" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    
+
+
+    <script>
+        const homeBtn = document.getElementById('homeBtn');
+        const membershipBtn = document.getElementById('membershipBtn');
+        const userManagementBtn = document.getElementById('userManagementBtn');
+        const addBtn = document.getElementById('addBtn');
+        const updateBtn = document.getElementById('updateBtn');
+
+        homeBtn.addEventListener('click', function() {
+            alert('Home button clicked');
+        });
+
+        membershipBtn.addEventListener('click', function() {
+            alert('Membership button clicked');
+        });
+
+        userManagementBtn.addEventListener('click', function() {
+            alert('User Management button clicked');
+        });
+
+        addBtn.addEventListener('click', function() {
+            alert('Add button clicked');
+        });
+
+        updateBtn.addEventListener('click', function() {
+            alert('Update button clicked');
+        });
+
+        function logout() {
+            alert("Logging out...");
+        }
+    </script>
+</body>
+</html>

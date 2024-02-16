@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .center {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18%;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+      }
+      .shopping-cart {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: lightblue;
+        border: 1px solid #ddd;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+      }
+      .preview {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
+      .total-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+      .proceed-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: lightgreen;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="item home">Home</div>
+        <div class="item view-product">View Product</div>
+        <div class="item request-item">Request Item</div>
+        <div class="item product-status">Product Status</div>
+        <div class="item log-out">Log Out</div>
+      </div>
+      <div class="center">
+        <div class="shopping-cart">Shopping Cart</div>
+      </div>
+      <div class="row">
+        <div class="product-info">
+          <div class="item image">Image</div>
+          <div class="item name">Name</div>
+          <div class="item price">Price</div>
+          <div class="item quantity">Quantity</div>
+          <div class="item total-price">Total Price</div>
+          <div class="item action">Action</div>
+        </div>
+      </div>
+      <div class="preview">
+        This is the preview area.
+      </div>
+      <div class="total-section">
+        <div class="total">Total: $100</div>
+        <div class="delete-all-btn">Delete All</div>
+      </div>
+      <div class="proceed-btn">
+        <button>Proceed to Checkout</button>
+      </div>
+    </div>
+  </body>
+</html>

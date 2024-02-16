@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-div {
+            float: left;
+            margin-top: 20px;
+        }
+
+        .right-div {
+            width: 50%;
+            background-color: aquamarine;
+            float: right;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .btn1 {
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+      
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+  
+    
+
+    <div class="container">
+
+        <div class="left-div">
+
+            
+                <a href="#">Home</a><br><br>
+                <a href="#">Membership</a><br><br>
+                <a href="#">User Management</a><br><br>
+            
+
+        </div>
+       
+        <div class="right-div">
+            <div class="button-container">
+                <button class="btn1" onclick="logout()">Logout</button><br><br><br>
+
+                <button class="btn">Add</button><br><br>
+                <button class="btn">Update</button><br><br><br>
+                <button class="btn">Add</button><br><br>
+                <button class="btn">Update</button>
+               
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <script>
+        function logout() {
+            alert("Logging out...");
+        }
+    </script>
+</body>
+</html>

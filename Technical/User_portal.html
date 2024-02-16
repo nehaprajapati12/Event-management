@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-div {
+        margin-top: 20px;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+    .welcome-div {
+        margin-bottom: 20px;
+        background-color: #007bff;
+        padding: 10px;
+    }
+    .sub-divs {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sub-div {
+        width: 22%;
+        background-color: #007bff;
+        padding: 10px;
+        text-align: center;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+       
+        min-width: 160px;
+        
+        z-index: 1;
+    }
+    .dropdown-content button {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .login-button {
+        margin-top: 20px;
+    }
+    .login-button button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-div">
+        <div class="welcome-div">
+            <h2>Welcome User</h2>
+        </div>
+        <div class="sub-divs">
+            <div class="sub-div dropdown">
+                <button class="dropbtn">Vendor</button>
+                <div class="dropdown-content">
+                    <button>  Catering </button>
+                    <button>  Florist</button>
+                    <button>  Decoration</button>
+                    <button>  Lighting</button>
+                </div>
+            </div>
+            <div class="sub-div">
+                <button> Card</button>
+            </div>
+            <div class="sub-div">
+                <button> Guest List</button>
+            </div>
+            <div class="sub-div">
+                <button> Order Status</button>
+            </div>
+        </div>
+        <div class="login-button">
+            <button>Log Out</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
